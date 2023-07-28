@@ -46,11 +46,11 @@ def submit():
     if request.method == 'POST':
         text = request.form['text']
         speaker = request.form['speaker'].lower()
-        print(speaker)
-        print(text)
+        # print(speaker)
+        # print(text)
 
     speaker_embeddings = torch.tensor(embeddings_dataset[speakers[speaker]]["xvector"]).unsqueeze(0)
-    print('pass speaker')
+    # print('pass speaker')
 
     inputs = processor(text=text,return_tensors='pt')
 
