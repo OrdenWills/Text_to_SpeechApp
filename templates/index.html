@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Basic -->
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <!-- Mobile Metas -->
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <!-- Site Metas -->
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Hirevac</title>
+
+
+  <!-- bootstrap core css -->
+  <link rel="stylesheet" type="text/css" href="/static/css/bootstrap.css" />
+
+  <!-- fonts style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+
+  <!-- font awesome style -->
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <!-- nice select -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/css/nice-select.min.css" integrity="sha256-mLBIhmBvigTFWPSCtvdu6a76T+3Xyt+K571hupeFLg4=" crossorigin="anonymous" />
+
+  <!-- Custom styles for this template -->
+  <link href="/static/css/style.css" rel="stylesheet" />
+  <!-- responsive style -->
+  <link href="/static/css/responsive.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <div class="hero_area">
+    <!-- header section strats -->
+    <header class="header_section">
+      <div class="container-fluid">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="">
+            <span>
+              Hirevac
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+        </nav>
+      </div>
+    </header>
+    <!-- end header section -->
+    <!-- slider section -->
+    <section class="slider_section ">
+      <div class="container ">
+        <div class="row">
+          <div class="col-lg-7 col-md-8 mx-auto">
+            <div class="detail-box">
+              <h1>
+                Turn Your <br>
+                Text to Sound With AI
+              </h1>
+              <p>
+                Transform your text data to audio in seconds using ai (if audio doesn't play after conversion refresh ur browser)
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="find_container ">
+          <div class="container">
+            <div class="row">
+              <div class="col">
+                <form method="post" action="{{url_for('submit')}}">
+                  <div class="form-row ">
+                    <div class="form-group col-lg-7">
+                      <input type="text" name="text" class="form-control" id="inputPatientName" placeholder="type word to turn to speech" style="color: black;" required>
+                    </div>
+                    <div class="form-group col-lg-3" style="color: black;">
+                      <select name="speaker" style="color: black;" class="form-control wide" id="inputDoctorName" required>
+                        <option value="jean">Choose Speaker(Voice)</option>
+                        <option value="jean">Jean</option>
+                        <option value="adol">Adol</option>
+                        <option value="sack">Emma</option>
+                        <option value="matt">Matt</option>
+                        <option value="john">John</option>
+                        <option value="ronica">Veronica</option>
+                        <option value="bill">Bill</option>
+                        <option value="oli">Oluoma</option>
+                      </select>
+                    </div>
+              
+                    <div class="form-group col-lg-3">
+                      <div class="btn-box">
+                        <button type="" class="btn ">Convert To Sound</button>
+                      </div>
+                      
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+            <div class="btn" >
+              <audio controls>
+                <source src="../static/sound/t2speech.mp3" type="audio/ogg"> </audio>
+            <button class="btn" style="background-color: seagreen;">download</button>
+            </div>
+            <ul class="job_check_list">
+              <li class=" ">
+                <input id="checkbox_qu_01" type="checkbox" class="styled-checkbox">
+                <label for="checkbox_qu_01">
+                  Freelancer
+                </label>
+              </li>
+              <li class=" ">
+                <input id="checkbox_qu_02" type="checkbox" class="styled-checkbox">
+                <label for="checkbox_qu_02">
+                  Part Time
+                </label>
+              </li>
+              <li class=" ">
+                <input id="checkbox_qu_03" type="checkbox" class="styled-checkbox">
+                <label for="checkbox_qu_03">
+                  Full Time
+                </label>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- end slider section -->
+  </div>
+  
+  <!-- info section -->
+  <section class="info_section ">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2 info_links">
+          <h4>
+            Audio books
+          </h4>
+          <ul>
+            <li class="active">
+              <a href="index.html">
+                Home
+              </a>
+            </li>
+            <li>
+              <a href="about.html">
+                About
+              </a>
+            </li>
+            <li>
+              <a class="" href="job.html">
+                Jobs
+              </a>
+            </li>
+            <li>
+              <a class="" href="freelancer.html">
+                Freelancers
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-3">
+          <h4>
+            YouTube Video
+          </h4>
+          <p>
+            Established fact that a reader will be distracted by the readable content of a page when looking at its
+            layout. The point of using Lorem Ipsum
+          </p>
+        </div>
+        <div class="col-md-3">
+          <div class="info_social">
+            <h4>
+              Social Link
+            </h4>
+            <div class="social_container">
+              <div>
+                <a href="">
+                  <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </a>
+              </div>
+              <div>
+                <a href="">
+                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="info_form">
+            <h4>
+              Newsletter
+            </h4>
+            <form action="">
+              <input type="text" placeholder="Enter Your Email" />
+              <button type="submit">
+                Subscribe
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- end info_section -->
+
+
+  <!-- footer section -->
+  <footer class="footer_section">
+    <div class="container">
+      <p>
+        &copy; <span id="displayYear"></span> All Rights Reserved By
+        <a href="https://html.design/">Free Html Templates</a>
+      </p>
+    </div>
+  </footer>
+  <!-- footer section -->
+
+  <!-- nice select -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-nice-select/1.1.0/js/jquery.nice-select.min.js" integrity="sha256-Zr3vByTlMGQhvMfgkQ5BtWRSKBGa2QlspKYJnkjZTmo=" crossorigin="anonymous"></script>
+ 
+
+
+</body>
+
+</html>
