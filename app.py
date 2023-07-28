@@ -64,4 +64,4 @@ def submit():
     return redirect(url_for('home'))
 
 if __name__ == "__main__":
-    app = app.run(debug=True)
+    app = app.run()
