@@ -22,7 +22,7 @@ def fetch_VoiceDataset():
 app = Flask(__name__)
 app.config['SECRET_KEY'] = 'any-secret-key-you-choose'
 
-@app.route('/home')
+@app.route('/')
 def home():
     return render_template('index.html')
 
@@ -64,4 +64,4 @@ def submit():
     return redirect(url_for('home'))
 
 if __name__ == "__main__":
-    app = app.run()
+    app = app.run(debug=True)
